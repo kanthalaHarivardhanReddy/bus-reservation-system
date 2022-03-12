@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.NavContainer{
+    diplay: inline-block;
+    background-color: black;
+    height: 10vh;
+}
+#one{
+    display:inline-block;
+}
+#two{
+    display:inline-block;
+}
+#three{
+    display:inline-block;
+}
+.Name{
+    display: inline-block;
+    padding:13px;
+    color:rgb(250, 134, 134);
+    text-decoration: none;
+}
+.Name:hover{
+    color: rgb(102, 255, 0);
+}
+
+.Button{
+    display:inline-block;
+    color:rgb(201, 74, 74);
+    text-decoration:none;
+    padding:0px 3px;
+    margin: 20px;
+    border: 1px solid grey;
+    height:30px;
+    border-radius:1px;
+}
+.Button:hover{
+    border-bottom: 3px solid red;
+    transition:0.1s;
+}
+

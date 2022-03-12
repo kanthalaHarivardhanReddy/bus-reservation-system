@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.BodyCont{
+    background: linear-gradient(135deg, lightgreen, pink, rgb(255,229,115));
+    height: 90vh;
+}
+.FootCont{
+    height: 10vh;
+    background-color: black;
+}
+img{
+    margin:auto;
+    width: 100vw;
+    
+}
