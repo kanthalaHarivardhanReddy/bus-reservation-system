@@ -1,11 +1,10 @@
 import React from "react";
 import "./Home.css"
 import Tcomp from "./T-comp.png"
+import {Link} from 'react-router-dom'
 const Home = ()=>{
     return (
         <>
-            
-           
             <div className="BodyCont">
                 <h1>Welcome to T-Companion </h1>
                 <h2>" Feel like travelling, book your tickets with us "</h2>
@@ -19,6 +18,7 @@ Comprehensive Ticket Details- Everything that you need to make the travel hassle
 Enter your mobile number below to download the redBus mobile app.
             </h3>
             </div>
+            <button ><Link to='/booking'>Book your Ticket</Link></button>
                 <img className="image" src={Tcomp}></img> 
                 
             </div>
