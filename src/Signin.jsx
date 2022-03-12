@@ -7,6 +7,7 @@ const Signin = ()=>{
         <>
             <section style={{height:'90vh'}}>
             <h1>Login page</h1>
+            <h6>Login to use the services</h6>
             <div className="container" style={{color:"black", fontWeigh:600}}>
                 <div class = "box">
                     Email<input type="email" placeholder="abc@xyz.com" name = "email"></input>

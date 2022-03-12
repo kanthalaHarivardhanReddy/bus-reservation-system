@@ -9,7 +9,8 @@ const Ticket=(props)=>{
         margin:'auto',
         height:'40vh',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        borderRadius:'20px'
     }
     const h3style={
         margin:'2%',
