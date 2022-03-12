@@ -1,0 +1,49 @@
+
+body{
+    background-color: black;
+    color:white;
+}
+h1{
+    color:bisque;
+    text-align: center;
+}
+div.container{
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin: auto;
+    height:70vh;
+    width:60vw;
+    background-repeat:no-repeat ;
+    font-family: 'Times New Roman', Times, serif;
+}
+input{
+    margin:1%;
+    color: white;
+    background-color: black;
+    border:none;
+    border-radius: 8px;
+    padding:6px;
+}
+button{
+    padding: 0 25px 0 25px;
+    border-radius: 0px;
+    margin:1%;
+    color: black;
+    background-color:white ;
+    border:none;
+    border-radius: 4px;
+    padding:4px;
+}
+button:hover{
+    color:white;
+    background-color: black;
+    opacity: 70%;
+    font-weight: 600;
+}
+div.register
+{
+    margin: 5%;
+}

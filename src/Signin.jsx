@@ -1,17 +1,19 @@
 import React from "react";
-import NavBar from "./NavBar";
+import './sign.css'
 const Signin = ()=>{
     return(
         <>
-            <NavBar/> 
             
-            <div className="MainCont">
-                <h2>Login page</h2>
+            <h1>Login page</h1>
+            <div className="container" style={{color:"black", fontWeigh:600}}>
                 <div class = "box">
-                    Email<input type="email" value = "abc@xyz.com" name = "email"></input>
+                    Email<input type="email" placeholder="abc@xyz.com" name = "email"></input>
                 </div>
                 <div> 
-                    Password<input type="password" name = "pwd"></input>
+                    Password<input type="password" placeholder="enter password" name = "pwd"></input>
+                </div>
+                <div>
+                    <><button>Login</button></>
                 </div>
             </div>
            
