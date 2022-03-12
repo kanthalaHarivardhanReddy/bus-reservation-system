@@ -1,10 +1,9 @@
-import React from "react";
-import Home from "./Home";
-import Signin from "./Signin";
+import React from 'react';
+import Registration from './Registration_page'
 const App = ()=>{
     return (
         <>
-            <Home />
+            <Registration/>
         </>
     )
 }
