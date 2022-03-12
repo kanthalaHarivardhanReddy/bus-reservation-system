@@ -1,9 +1,20 @@
 import React from "react";
+import "./Home.css"
+import Tcomp from "./T-comp.png"
+import NavBar from "./NavBar"
 const Home = ()=>{
     return (
         <>
             
-            <h1>One stop for all your Bookings</h1>
+           <NavBar/> 
+            <div className="BodyCont">
+                <img className="image" src={Tcomp}></img> 
+                
+            </div>
+            <footer className = "FootCont">
+
+            </footer>
+            
             
         </>
     )
