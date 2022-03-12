@@ -8,13 +8,13 @@ h1{
 }
 div.container{
     background-image:URL("bgimg.jpg");
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius: 50px;
     margin: auto;
     height:70vh;
-    width:48vw;
+    width:60vw;
     background-repeat:no-repeat ;
     font-family: 'Times New Roman', Times, serif;
 }
