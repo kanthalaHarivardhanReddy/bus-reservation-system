@@ -1,9 +1,9 @@
 import React from "react";
-
+import Registration from './Registration_page'
 const App = ()=>{
     return (
         <>
-            <h1>Hello, World!</h1>
+            <Registration/>
         </>
     )
 }
