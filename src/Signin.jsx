@@ -1,9 +1,11 @@
 import React from "react";
 import './sign.css'
+import { Link } from "react-router-dom";
+
 const Signin = ()=>{
     return(
         <>
-            
+            <section style={{height:'90vh'}}>
             <h1>Login page</h1>
             <div className="container" style={{color:"black", fontWeigh:600}}>
                 <div class = "box">
@@ -13,10 +15,10 @@ const Signin = ()=>{
                     Password<input type="password" placeholder="enter password" name = "pwd"></input>
                 </div>
                 <div>
-                    <><button>Login</button></>
+                <center><button><Link to="/booking">Login</Link></button></center>
                 </div>
             </div>
-           
+            </section>
         </>
     )
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import './Reg.css';
-
+import { Link } from "react-router-dom";
 const Registration_page = ()=>{
     return (
 
         <>
+        <section style={{height:'90vh'}}>
         <h1><center><i>REGISTRATION PAGE</i></center></h1>
 
         <div className="container">
@@ -33,11 +34,12 @@ const Registration_page = ()=>{
         </div>
         
         <div className="register">
-            <center><button>Register</button></center>
+            <center><button><Link to="/login">Register</Link></button></center>
         </div>
         </form>
         </div>
-        </>
+        </section>
+    </>
     )
 }
 

@@ -5,15 +5,15 @@ const NavBar= () =>{
 return(
     <>
     <nav>
-                <div class = "NavContainer">
+                <div className = "NavContainer">
                     <div id="one">
-                    <Link class="Name" to="/"><h3>T-Companion</h3></Link>
+                    <Link className="Name" to="/"><h3>T-Companion</h3></Link>
                     </div>
                     <div id = "two">
-                        <Link class="Button" to="/login"><h4>Sign in</h4></Link>
+                        <Link className="Button" to="/login"><h4>Sign in</h4></Link>
                     </div>
                     <div id = "three"> 
-                        <Link class="Button" to='/register'><h4>Sign up</h4></Link>
+                        <Link className="Button" to='/register'><h4>Sign up</h4></Link>
                     </div>
                 </div>
 

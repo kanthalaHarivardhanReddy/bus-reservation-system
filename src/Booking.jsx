@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import './Booking.css'
-
-const Booking=()=>{
-    const [from, setFrom] =useState("Hyderabad");
-    const [to, setTo] =useState("Bengaluru");
-    const [d,setd] = useState('12-03-2022 17:44');
-    const [isavail,setIsavail] = useState(false);
+import { Link } from "react-router-dom";
+import Ticket from "./Ticket";
+const Booking=(props)=>{
+    const [isavail,setIsavail]=useState(false);
+    const isAvail=(e)=>{
+        e.preventDefault();
+        setIsavail(true);
+    }
     return (
         <>
             <h1>T-Companion Booking services</h1>
@@ -14,7 +16,8 @@ const Booking=()=>{
 
                 <form>
                     <div>
-                    FROM<select value={from} onChange={(e)=>setFrom(e.target.value)} id="from">
+                    <center>
+                    FROM<select value={props.from} onChange={(e)=>props.upF(e.target.value)} id="from">
                             <option value="Hyderabad">Hyderabad</option>
                             <option value="Delhi">Delhi</option>
                             <option value="Bengaluru">Bengaluru</option>
@@ -28,9 +31,11 @@ const Booking=()=>{
                             <option value="Vizag">Vizag</option>
                             <option value="Patna">Patna</option>
                         </select>
+                    </center>
                     </div>
                     <div>
-                        TO<select value={to} onChange={(e)=>setTo(e.target.value)} id="to">
+                    <center>
+                        TO<select value={props.to} onChange={(e)=>props.upT(e.target.value)} id="to">
                         <option value="Hyderabad">Hyderabad</option>
                             <option value="Delhi">Delhi</option>
                             <option value="Bengaluru">Bengaluru</option>
@@ -44,19 +49,26 @@ const Booking=()=>{
                             <option value="Vizag">Vizag</option>
                             <option value="Patna">Patna</option>
                         </select>
+                    </center>
                     </div>
                     <div>
-                        <input onChange={(e)=>setd(e.target.value)} type="datetime-local" placeholder="date" />
+                    <center>
+                        <input type="datetime-local" placeholder="date" />
+                    </center>
                     </div>
                     <div>
 
                     </div>
-                    <button onClick={setIsavail(from!==to)} >check availability</button>
-                    {
-                        (isavail)?
-                        <div style={{backgroundColor:"green"}}>Available</div>:
-                        <div style={{backgroundColor:"red"}}>Not Available</div>
-                    }
+                    <center>
+                        <input type='submit' onClick={(e)=>isAvail(e)} value="Book Ticket"/>
+                        
+                    </center>
+                    <div>
+                        {(isavail)?
+                        <h4>
+                            <Link to="/ticket">View your Ticket Here</Link>
+                        </h4>:''}
+                    </div>
                 </form>
                 </div>
             </div>

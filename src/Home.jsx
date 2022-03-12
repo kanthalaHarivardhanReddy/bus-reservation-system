@@ -18,7 +18,7 @@ Comprehensive Ticket Details- Everything that you need to make the travel hassle
 Enter your mobile number below to download the redBus mobile app.
             </h3>
             </div>
-            <button ><Link to='/booking'>Book your Ticket</Link></button>
+            <center><button ><Link to='/booking'>Book your Ticket</Link></button></center>
                 <img className="image" src={Tcomp}></img> 
                 
             </div>
