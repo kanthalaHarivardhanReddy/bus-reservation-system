@@ -1,9 +1,9 @@
 import React from "react";
-
+import Booking from "./Booking"
 const App = ()=>{
     return (
         <>
-            <h1>Hello, World!</h1>
+            <Booking />
         </>
     )
 }
