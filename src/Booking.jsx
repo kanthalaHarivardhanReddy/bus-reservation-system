@@ -10,7 +10,7 @@ const Booking=(props)=>{
     }
     return (
         <>
-            <h1>T-Companion Booking services</h1>
+            <h1 style={{padding:'20px',textDecoration:'underline'}}>T-Companion Booking services</h1>
             <div className="container">
                 <div>
 

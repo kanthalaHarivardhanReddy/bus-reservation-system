@@ -10,10 +10,13 @@ return(
                     <Link className="Name" to="/"><h3>T-Companion</h3></Link>
                     </div>
                     <div id = "two">
-                        <Link className="Button" to="/login"><h4>Sign in</h4></Link>
+                        <Link className="Button" to="/login"><h4>Login</h4></Link>
                     </div>
                     <div id = "three"> 
-                        <Link className="Button" to='/register'><h4>Sign up</h4></Link>
+                        <Link className="Button" to='/register'><h4>Register</h4></Link>
+                    </div>
+                    <div id = "three"> 
+                        <Link className="Button" to='/aboutus'><h4>About Us</h4></Link>
                     </div>
                 </div>
 

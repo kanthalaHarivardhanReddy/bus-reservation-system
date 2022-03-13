@@ -3,7 +3,7 @@
     padding: 0;
 }
 .NavContainer{
-    diplay: inline-block;
+    display: inline-block;
     background-color: black;
     height: 10vh;
 }

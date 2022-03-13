@@ -29,3 +29,8 @@ img{
 button{
     text-decoration: none;
 }
+img{
+    width:98.7vw;
+    opacity: 90%;
+    filter:brightness(100%)
+}

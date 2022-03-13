@@ -13,10 +13,13 @@ div.container{
     justify-content: center;
     align-items:center;
     margin: auto;
-    height:70vh;
+    height:90vh;
     width:60vw;
     background-repeat:no-repeat ;
     font-family: 'Times New Roman', Times, serif;
+}
+form{
+    margin:3vh;
 }
 input{
     margin:1%;

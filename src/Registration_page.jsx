@@ -6,7 +6,7 @@ const Registration_page = ()=>{
 
         <>
         <section style={{height:'90vh'}}>
-        <h1><center><i>REGISTRATION PAGE</i></center></h1>
+        <h1 style={{padding:'20px',textDecoration:'underline'}} ><center><i>Registration Page</i></center></h1>
 
         <div className="container">
         <form>
@@ -34,7 +34,7 @@ const Registration_page = ()=>{
         </div>
         
         <div className="register">
-            <center><button><Link to="/login">Register</Link></button></center>
+            <center><button><Link to="/login" style={{textDecoration:'none'}}>Register</Link></button></center>
         </div>
         </form>
         </div>
