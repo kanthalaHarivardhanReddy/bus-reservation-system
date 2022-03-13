@@ -8,6 +8,7 @@ import NavBar from './NavBar';
 import Booking from './Booking';
 import AboutUs from './AboutUs';
 import Ticket from './Ticket';
+import Payment from './Payment';
 const App = ()=>{
   const [from, setFrom] =useState("Hyderabad");
   const [to, setTo] =useState("Bengaluru");
@@ -29,6 +30,7 @@ const App = ()=>{
             <Route path="/booking" element={<Booking from={from} to={to}/>} upF={updateFrom} upT={updateTo}/>
             <Route path="/ticket" element={<Ticket source={from} dest={to} />} />
             <Route path="/aboutus" element={<AboutUs/>}/>
+            <Route path='/payment' element={<Payment/>}/>
           </Routes>
         <Footer/>
         </>

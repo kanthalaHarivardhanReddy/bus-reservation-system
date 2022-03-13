@@ -60,13 +60,16 @@ const Booking=(props)=>{
 
                     </div>
                     <center>
-                        <input type='submit' onClick={(e)=>isAvail(e)} value="Book Ticket"/>
+                        <input type='submit' onClick={(e)=>isAvail(e)} value="check Availability"/>
                         
                     </center>
                     <div>
                         {(isavail)?
-                        <h4>
-                            <Link to="/ticket">View your Ticket Here</Link>
+                        <h4 style={{textAlign:'center'}}>
+                            <h3 style={{color:'green'}}>Tickets are Available</h3>
+                            <br/>
+                            <button>
+                            <Link style={{textDecoration:'none'}} to="/payment">Pay to Book your Ticket</Link></button>
                         </h4>:''}
                     </div>
                 </form>
