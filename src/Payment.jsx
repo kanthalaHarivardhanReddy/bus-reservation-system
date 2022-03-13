@@ -16,13 +16,13 @@ const Payment = ()=>{
             <center><h2 style={{color:'grey'}}>Please, pay 400INR to book your ticket </h2></center>
             <div className="container" style={{color:"black", fontWeight:600 }}>
                 <div className= "box">
-                    Card number <input type="text" placeholder="6748 9875 8975 5623" name = "cardno"></input>
+                    Card number <input type="text" placeholder="6748 9875 8975 5623" name = "cardno"/>
                 </div>
                 <div> 
-                    CVV <input type="text" placeholder="enter CVV " name = "cvv"></input>
+                    CVV <input type="text" placeholder="enter CVV " name = "cvv"/>
                 </div>
                 <div> 
-                    Expiry Date <input type="date"  name = "date"></input>
+                    Expiry Date <input type="date"  name = "date"/>
                 </div>
                 <div>
                 <center >
@@ -31,7 +31,7 @@ const Payment = ()=>{
                 </div>
                 {(pay)?<div>
                 <center>
-                    <h3 style={{color:'green'}}>Payment is Successful</h3>
+                    <h3 style={{color:'green',padding:'5px'}}>Payment is Successful!</h3>
                     <button><Link to="/ticket" style={{textDecoration:'none'}}>View your ticket here</Link></button></center>
                 </div>:
                 ''}
